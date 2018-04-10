@@ -1,6 +1,9 @@
 #! /usr/bin/env python
 # encoding: utf-8
 
+## output directory: (default:"build")
+out = 'Debug'
+
 def hello(ctx):
 	print('waf. hello world.')
 
@@ -26,7 +29,7 @@ def build(bld):
                 linkflags    = ['-g'], 
 
                 install_path = None, 
-                cflags       = ['-O2', '-Wall'], 
+                cflags       = ['-O0', '-g' , '-Wall'], 
                 cxxflags     = ['-O0', '-g' , '-Wall'],
 
         )

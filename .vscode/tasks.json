@@ -26,6 +26,18 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "waf clean",
+            "type": "shell",
+            "command": "waf clean",
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+            }
         }
     ]
 }
