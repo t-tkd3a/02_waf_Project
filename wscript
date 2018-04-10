@@ -24,11 +24,9 @@ def build(bld):
                 lib          = ['m'], 
                 libpath      = ['/usr/lib'],
                 linkflags    = ['-g'], 
-                rpath        = ['/opt/kde/lib'], 
-                vnum         = '1.2.3',
 
                 install_path = None, 
                 cflags       = ['-O2', '-Wall'], 
-                cxxflags     = ['-O3'],
-                dflags       = ['-g'],
+                cxxflags     = ['-O0', '-g' , '-Wall'],
+
         )
